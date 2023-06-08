@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -19,7 +17,7 @@ const Books = () => {
     fetchAllBooks();
   }, []);
 
-  console.log(books);
+  // console.log(books);
 
   const handleDelete = async (id) => {
     try {
